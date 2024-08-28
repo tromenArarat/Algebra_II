@@ -28,7 +28,7 @@ def main():
     print("Ingrese cantidad de filas:")
     n = int(input())
     
-    # Mostrar etiquetas para la matriz
+    # Nomenclar la matriz
     for i in range(1, m + 1):
         a = ""
         for j in range(1, n + 1):
@@ -44,7 +44,7 @@ def main():
             x = NumeroRandom(10)
             fila.append(x)
         A.append(fila)
-        print(" ".join([f"{x:2}" for x in fila]))  # Imprime la fila formateada
+        print(" ".join([f"{x:2}" for x in fila])) 
     
     print("Matriz B con valores random:")
     

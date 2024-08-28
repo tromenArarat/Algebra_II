@@ -38,7 +38,7 @@ Algoritmo matrices
 	Fin Para
 	
 	Escribir "----------"
-	Escribir "Matriz con valores random";
+	Escribir "Matriz 1 con valores random: ";
 	// Crear la matriz con valores aleatorios entre -10 y 10
 	Para i = 1 Hasta m Hacer
 		Para j = 1 Hasta n Hacer
@@ -52,5 +52,24 @@ Algoritmo matrices
 		Escribir a;
 		a = "";
 	Fin Para
+	
+	Escribir "Matriz 2 con valores random: ";
+	// Crear la matriz 2 con valores aleatorios entre -10 y 10
+	Para i = 1 Hasta m Hacer
+		Para j = 1 Hasta n Hacer
+			x=NumeroRandom(10);
+			Si x<0 Entonces
+				a = a+ConvertirATexto(x)+" ";
+			SiNo
+				a = a+" "+ConvertirATexto(x)+" ";
+			Fin Si
+		Fin Para
+		Escribir a;
+		a = "";
+	Fin Para
+	
+	Escribir "Suma las matrices";
+	
+	
 	
 FinAlgoritmo
